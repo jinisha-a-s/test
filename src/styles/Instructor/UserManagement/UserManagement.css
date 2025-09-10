@@ -1,0 +1,131 @@
+/* container */
+.um-wrap {
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+/* header: like your first screenshot (blue-ish title + subtitle) */
+.um-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  padding-top: 100px;
+}
+
+.um-title h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #282828;
+}
+
+.um-title .subtitle {
+  margin: 2px 0 0;
+  font-size: 20px;
+  color: #666;
+}
+
+/* controls: left filter, right search */
+.um-controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* dropdown */
+.um-filter-label { font-size: 13px; color: #333; display: flex; align-items:center; gap:8px; }
+.um-filter-select {
+  margin-left: 6px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+}
+
+/* search */
+.um-search-box input {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  min-width: 160px;
+}
+.um-search-box input::placeholder {
+  font-size: 14px;   /* change the size */
+  color: #999;       /* change color */
+  font-style: italic; /* optional */
+}
+
+
+/* card around table */
+.um-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 8px;
+  box-shadow: 0 2px 10px rgba(25,25,25,0.05);
+  overflow: hidden;
+}
+
+/* table */
+.um-custom-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.um-custom-table th, .um-custom-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.um-custom-table thead th {
+  background: #0EA5E9;
+  font-weight: 600;
+    color: white;
+}
+
+/* full-row hover effect (covers whole row) */
+.um-custom-table tbody tr.um-table-row:hover,
+.um-custom-table tbody tr.um-table-row:focus {
+  background: #f2f8ff;
+  cursor: pointer;
+  outline: none;
+}
+
+/* empty row */
+.um-empty-row td {
+  padding: 24px;
+  text-align: center;
+  color: #666;
+}
+
+/* status labels */
+.um-status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.um-status.newly { color: #057a07; } /* green */
+.um-status.ongoing { color: #0b6aa0;  } /* teal/blue */
+.um-status.finished { color: #b69608;  } /* blue */
+.um-status.discontinued { color: #a70b0b; } /* red */
+
+/* actions */
+.btn-action {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  margin-right: 6px;
+  font-size: 13px;
+}
+
+.btn-action.view { background: white; border: 1px solid #d0d5dd; color: #0b6aa0; }
+
+.btn-action.view:hover { background: #5a7dc2; cursor: pointer; color: white;}
+/* .btn-action.delete { background: #fff0f0; border: 1px solid #f1c0bf; color: #a70b0b; } */
